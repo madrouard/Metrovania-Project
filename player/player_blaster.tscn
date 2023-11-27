@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv4krwp8vivp4"]
+
+[ext_resource type="Script" path="res://player/player_blaster.gd" id="1_vrt63"]
+[ext_resource type="Texture2D" uid="uid://fslj1e0vfuas" path="res://player/player_blaster.png" id="2_jm4v4"]
+
+[node name="PlayerBlaster" type="Node2D"]
+script = ExtResource("1_vrt63")
+
+[node name="BlasterSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_jm4v4")
+
+[node name="Muzzle" type="Marker2D" parent="BlasterSprite"]
+position = Vector2(7, 0)
